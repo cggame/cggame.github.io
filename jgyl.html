@@ -9,15 +9,18 @@
                 height: 15vh;
                 margin: 10vh auto 5vh;
             }
-            a{
+            #ios,#android{
+                display: none;
+            }
+            #ios a,#android a{
                 width: 80%;
                 height: 5vh;
                 line-height: 5vh;
                 background-color: #ea6f5a;
                 text-align: center;
-                display: none;
                 border-radius: 10px;
                 margin: 5vh auto;
+                display: block;
                 color: #fff;
                 text-decoration: none;
                 font-size: 3vh;
@@ -59,13 +62,23 @@
         <img src="https://next.655az.com/jgyl/512.png" id=logo>
         <h2 style="font-size: 3vh;height: 3vh;">金冠娱乐</h2>
         <div>
-            <a id='ios' style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://next.655az.com/jgyl3/manifest.plist">IOS 下载</a>
-            <a id='android' style="text-align:center;" href="https://next.655az.com/jgyl2/app.apk" target="_blank">Android 下载</a>
+            <div id='ios'>
+                <a  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://next.655az.com/jgyl3/manifest.plist">IOS 下载(线路一)</a>
+                <a  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://east.655az.com/jgyl/manifest.plist">IOS 下载(线路二)</a>
+            </div>
+
+            <div id='android'>
+                <a style="text-align:center;" href="https://east.655az.com/jgyl/app.apk" target="_blank">Android 下载(线路一)</a>
+                <a style="text-align:center;" href="https://next.655az.com/jgyl3/app.apk" target="_blank">Android 下载(线路二)</a>
+            </div>
+            
+            
             <p id='url'></p>
             <div id="qrcode"></div>
         </div>
         <div id='msg'>
             <h3>注意</h3>
+            <p style="color: red;">安装前请务必卸载旧版APP</p>
             <p style="color: red;">请通过系统浏览器打开该安装页面！请勿通过微信，QQ等应用的内置浏览器打开安装</p>
             <p id="iosmsg">安装说明：点击下载按钮之后，出现确认框选择安装之后回到系统桌面，即可看到ios正在下载安装中，安装完毕之后需要到系统设置-》通用-》设备管理里面点击信任该APP的证书</p>
             <p id="androidmsg">安装说明：点击下载按钮之后，到浏览器下载管理里面即可看到该app正处于下载中，完毕后若无法自动安装，请手动点击执行安装！</p>
@@ -122,5 +135,6 @@
             }
             checkPlatform();
         </script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278291818'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278291818%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
     </body>
 </html>
