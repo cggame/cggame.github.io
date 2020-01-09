@@ -12,7 +12,31 @@
             #ios,#android{
                 display: none;
             }
-            #ios a,#android a{
+            #ios img{
+            	width: 80%;
+            	display: block;
+            	margin: 0px auto;
+            	box-shadow: 0px 0px 8px #999;
+            }
+            #ios h3,#ios h5,#ios p{
+            	width: 80%;
+            	margin: 0px auto;
+            }
+            #ios h3{
+            	font-size: 4vw;
+            	text-align: center;
+            }
+            #ios h5{
+            	font-size: 3vw;
+            	margin-top: 15px;
+            }
+            #ios p{
+            	height: 12vw;
+            	line-height:12vw;
+            	font-size: 3vw; 
+            	color: red;
+            }
+            #ios .dow,#android .dow{
                 width: 80%;
                 height: 5vh;
                 line-height: 5vh;
@@ -59,17 +83,42 @@
         </style>
     </head>
     <body>
-        <img src="https://next.655az.com/jgyl/512.png" id=logo>
+        <img src="https://east.655az.com/jgyl/512.png" id=logo>
         <h2 style="font-size: 3vh;height: 3vh;">金冠娱乐</h2>
         <div>
             <div id='ios'>
-                <a  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://next.655az.com/jgyl/manifest.plist">IOS 下载(线路一)</a>
-                <a  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://east.655az.com/jgyl/manifest.plist">IOS 下载(线路二)</a>
+                <!-- <a class="dow"  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://east.655az.com/jgyl/manifest.plist">IOS 下载</a> -->
+                <h3>IOS WebAPP 安装说明</h3>
+                <h5>第一步</h5>
+                <div>
+                	<p><a href="https://h5.jinguan66666.com/" target="_blank">点击此处，在Safari浏览器中打开</a></p>
+                </div>
+                <h5>第二步</h5>
+                <div>
+                	<p>点击底部分享按钮</p>
+                	<img src="https://ice.lalajj.com/jinguanniu/f1c6b4648150099b287124c9d64d6572.png">
+                	<p>会出现如下界面</p>
+                	<img src="https://ice.lalajj.com/jinguanniu/74da74385d7f74094923100560313c99.jpg">
+                </div>
+                <h5>第三步</h5>
+                <div>
+                	<p>下滑到底部，点击添加到主屏幕</p>
+                	<img src="https://ice.lalajj.com/jinguanniu/9e9375172f3f49e92a23990e3ff44b4f.png">
+                </div>
+                <h5>第四步</h5>
+                <div>
+                	<p>点击添加</p>
+                	<img src="https://ice.lalajj.com/jinguanniu/f436f1dd981e4ea19170a76d3d61338e.png">
+                </div>
+                <h5>第五步</h5>
+                <div>
+                	<p>返回主界面将看到APP图标</p>
+                	<img src="https://ice.lalajj.com/jinguanniu/b8b6b6f76bc7ad5ea8b2bf76f75fe5db.jpg">
+                </div>
             </div>
 
             <div id='android'>
-                <a style="text-align:center;" href="https://east.655az.com/jgyl/app.apk" target="_blank">Android 下载(线路一)</a>
-                <a style="text-align:center;" href="https://next.655az.com/jgyl/app.apk" target="_blank">Android 下载(线路二)</a>
+                <a class="dow" style="text-align:center;" href="https://east.655az.com/jgyl/app.apk" target="_blank">Android 下载</a>
             </div>
             
             
@@ -80,10 +129,10 @@
             <h3>注意</h3>
             <p style="color: red;">安装前请务必卸载旧版APP</p>
             <p style="color: red;">请通过系统浏览器打开该安装页面！请勿通过微信，QQ等应用的内置浏览器打开安装</p>
-            <p id="iosmsg">安装说明：点击下载按钮之后，出现确认框选择安装之后回到系统桌面，即可看到ios正在下载安装中，安装完毕之后需要到系统设置-》通用-》设备管理里面点击信任该APP的证书</p>
+            <!-- <p id="iosmsg">安装说明：点击下载按钮之后，出现确认框选择安装之后回到系统桌面，即可看到ios正在下载安装中，安装完毕之后需要到系统设置-》通用-》设备管理里面点击信任该APP的证书</p> -->
             <p id="androidmsg">安装说明：点击下载按钮之后，到浏览器下载管理里面即可看到该app正处于下载中，完毕后若无法自动安装，请手动点击执行安装！</p>
         </div>
-        <script type="text/javascript" src="https://next.655az.com/qrcode.min.js"></script>
+        <script type="text/javascript" src="https://east.655az.com/qrcode.min.js"></script>
         <script type="text/javascript">
          function checkPlatform(){
                 var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
@@ -135,6 +184,5 @@
             }
             checkPlatform();
         </script>
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278291818'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278291818%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
     </body>
 </html>
