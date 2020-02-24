@@ -80,6 +80,43 @@
             #msg #iosmsg,#msg #androidmsg{
                 display: none;
             }
+            .iosbox{
+                display: none;
+            }
+            .seltab{
+                width: 90%;
+                margin: 20px auto;
+                display: block;
+                clear: both;
+                height: 50px;
+                line-height: 50px;
+            }
+            .seltab span{
+                display: inline-block;
+                width: 40%;
+                height: 7vw;
+                line-height: 7vw;
+                font-size: 4vw;
+                color: #000;
+                float: left;
+                border:1px solid #000;
+                border-radius: 4px;
+                padding-left: 5px;
+                padding-right: 5px;
+                text-align: center;
+            }
+            .seltab span.sel{
+                border:1px solid red;
+                color: red;
+                font-weight: bolder;
+            }
+            .seltab .item2{
+                float: right;
+            }
+            .iosbox{
+                clear: both;
+                margin-top: 6vw;
+            }
         </style>
     </head>
     <body>
@@ -87,34 +124,50 @@
         <h2 style="font-size: 3vh;height: 3vh;">金冠娱乐</h2>
         <div>
             <div id='ios'>
-                <!-- <a class="dow"  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://east.655az.com/jgyl/manifest.plist">IOS 下载</a> -->
-                <h3>IOS WebAPP 安装说明</h3>
-                <h5>第一步</h5>
-                <div>
-                	<p><a href="https://h5.jinguan66666.com/" target="_blank">点击此处，在Safari浏览器中打开</a></p>
+
+                    <div class="seltab">
+                        <span class="item1">
+                            IOS 原生APP安装
+                        </span>
+                        <span class="item2 sel">
+                            IOS WebAPP 安装
+                        </span>
+                    </div>
+
+                <div class="iosbox">
+                    <a class="dow"  style="text-align:center;" href="itms-services:///?action=download-manifest&url=https://east.655az.com/jgyl/manifest.plist">IOS 下载</a>
                 </div>
-                <h5>第二步</h5>
-                <div>
-                	<p>点击底部分享按钮</p>
-                	<img src="https://ice.lalajj.com/jinguanniu/f1c6b4648150099b287124c9d64d6572.png">
-                	<p>会出现如下界面</p>
-                	<img src="https://ice.lalajj.com/jinguanniu/74da74385d7f74094923100560313c99.jpg">
+
+                <div class="iosbox">
+                    <h5>第一步</h5>
+                    <div>
+                        <p><a href="https://h5.jinguan88888.com/" target="_blank">点击此处，在Safari浏览器中打开</a></p>
+                    </div>
+                    <h5>第二步</h5>
+                    <div>
+                        <p>点击底部分享按钮</p>
+                        <img src="https://ice.lalajj.com/jinguanniu/f1c6b4648150099b287124c9d64d6572.png">
+                        <p>会出现如下界面</p>
+                        <img src="https://ice.lalajj.com/jinguanniu/74da74385d7f74094923100560313c99.jpg">
+                    </div>
+                    <h5>第三步</h5>
+                    <div>
+                        <p>下滑到底部，点击添加到主屏幕</p>
+                        <img src="https://ice.lalajj.com/jinguanniu/9e9375172f3f49e92a23990e3ff44b4f.png">
+                    </div>
+                    <h5>第四步</h5>
+                    <div>
+                        <p>点击添加</p>
+                        <img src="https://ice.lalajj.com/jinguanniu/f436f1dd981e4ea19170a76d3d61338e.png">
+                    </div>
+                    <h5>第五步</h5>
+                    <div>
+                        <p>返回主界面将看到APP图标</p>
+                        <img src="https://ice.lalajj.com/jinguanniu/b8b6b6f76bc7ad5ea8b2bf76f75fe5db.jpg">
+                    </div>
                 </div>
-                <h5>第三步</h5>
-                <div>
-                	<p>下滑到底部，点击添加到主屏幕</p>
-                	<img src="https://ice.lalajj.com/jinguanniu/9e9375172f3f49e92a23990e3ff44b4f.png">
-                </div>
-                <h5>第四步</h5>
-                <div>
-                	<p>点击添加</p>
-                	<img src="https://ice.lalajj.com/jinguanniu/f436f1dd981e4ea19170a76d3d61338e.png">
-                </div>
-                <h5>第五步</h5>
-                <div>
-                	<p>返回主界面将看到APP图标</p>
-                	<img src="https://ice.lalajj.com/jinguanniu/b8b6b6f76bc7ad5ea8b2bf76f75fe5db.jpg">
-                </div>
+                
+                
             </div>
 
             <div id='android'>
@@ -129,10 +182,11 @@
             <h3>注意</h3>
             <p style="color: red;">安装前请务必卸载旧版APP</p>
             <p style="color: red;">请通过系统浏览器打开该安装页面！请勿通过微信，QQ等应用的内置浏览器打开安装</p>
-            <!-- <p id="iosmsg">安装说明：点击下载按钮之后，出现确认框选择安装之后回到系统桌面，即可看到ios正在下载安装中，安装完毕之后需要到系统设置-》通用-》设备管理里面点击信任该APP的证书</p> -->
+            <p id="iosmsg">IOS原生APP安装说明：点击下载按钮之后，出现确认框选择安装之后回到系统桌面，即可看到ios正在下载安装中，安装完毕之后需要到系统设置-》通用-》设备管理里面点击信任该APP的证书</p>
             <p id="androidmsg">安装说明：点击下载按钮之后，到浏览器下载管理里面即可看到该app正处于下载中，完毕后若无法自动安装，请手动点击执行安装！</p>
         </div>
         <script type="text/javascript" src="https://east.655az.com/qrcode.min.js"></script>
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript">
          function checkPlatform(){
                 var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
@@ -168,6 +222,23 @@
 
                     document.getElementById('iosmsg').style.display="block";
                     document.getElementById('androidmsg').style.display="none";
+
+                    $(".iosbox").hide();
+                    $(".iosbox:eq(1)").show();
+
+                    $(".seltab span").click(function(){
+                        $(".seltab span").removeClass("sel");
+                        $(this).addClass("sel");
+                        var ct = $(this).index();
+                        if(ct == 0){
+                            $(".iosbox").hide();
+                            $(".iosbox:eq(0)").show();
+                        }else{
+                            $(".iosbox").hide();
+                            $(".iosbox:eq(1)").show();
+                        }
+                    })
+
                   }else{
                     document.getElementById('url').innerText = "请从系统的safari浏览器中打开该页面!";
                     new QRCode(document.getElementById("qrcode"), window.location.href);  // 设置要生成二维码的链接
